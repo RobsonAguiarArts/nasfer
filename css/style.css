@@ -2,15 +2,24 @@
 body{
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
+  
 }
-ul{
+h1, ul, p, h2{
   margin: 0px;
+}
+
+ul{
   padding: 0px;
   list-style: none;
 }
 a{
   text-decoration: none;
-  color: #fff;
+  color: inherit;
+}
+img{
+  max-width: 100%;
+  display: block;
+  
 }
 .header-bg{
   background: rgba(6, 12, 34, 0.98);
@@ -51,6 +60,59 @@ a{
   width: 100%;
   transition: 0.3s;
 }
+/* Final header */
+/* Início introducao */
+.introducao-bg {
+ background: #000;
+ color: #fff;
+}
+.introducao{
+  display:grid;
+}
+.introducao img{
+grid-area: 1/1;
+max-height: 100vh;
+opacity: 0.5;
+z-index: 100;
+}
+.introducao .introducao-conteudo{
+  display: grid;
+  grid-area: 1/1;
+  place-self: center;
+  z-index: 1000;
+  margin-top: 40px;
+  margin-bottom:20px;
+  place-items: center;
+}
+.introducao-conteudo h1{
+
+  text-transform: uppercase;
+}
+.introducao-conteudo p{
+  margin-top:20px;
+  max-width: 500px;
+}
+.introducao-conteudo a{
+  display: grid;
+  margin-top: 50px;
+  border: 2px solid #84e;
+  padding: 10px 40px;
+  border-radius: 25px;
+  text-transform: uppercase;
+}
+/* Final introdução */
+/* Início main */
+.sobre-bg{
+ background: url(../img/about-bg.jpg) no-repeat center center;
+ margin: 0;
+}
+
+
+/* Final main */
+
+
+
+/* Início media */
 @media (max-width: 800px){
   .header-menu{
     gap: 20px
