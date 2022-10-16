@@ -1,0 +1,16 @@
+img{
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+
+}
+.cabecalho{
+  display:grid;
+  grid-template-columns: 1fr ;
+  grid-template-rows: 1;
+  
+}
+.img-logo{
+  width: 200px;
+  grid-area: 1;
+}
