@@ -128,28 +128,28 @@ z-index: 100;
   max-width: 1200px;
   margin: 0 auto;
   gap: 20px;
-  color: #fff;
+  color: rgba(202, 206, 221, 0.8);
   position: relative;
+  
+  
 }
 .sobre-1,.sobre-2,.sobre-3{
   margin: 60px 0;
   font-size: 16px;
 }
-.sobre-1 h2,.sobre-3 h2{
+.sobre-1 h1,.sobre-2 h2, .sobre-3 h2{
   margin: 0 0 10px ;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 43px;
   font-family: 'Raleway';
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.sobre-1 h2{
+  font-size: 36px;
+  line-height: 43px;
 }
 .sobre-2 h2, .sobre-3 h2{
-  font-family: raleway;
-  margin: 0 0 10px;
   font-size:18px;
-  font-weight: 700;
   line-height: 20px;
-  text-transform: uppercase;
-  font-family: 'Raleway';
 }
 .sobre-1 p,.sobre-2 p,.sobre-3 p{
   font-family:sans-serif;
@@ -179,14 +179,14 @@ z-index: 100;
     display: grid;
     grid-template-columns: 1fr ;
     max-width: 800px;
-    margin: 0 10px;
+    margin: 0 20px;
     place-items: center;
-    text-align: justify;
+    text-align:center;
     
   }
   .sobre-1,.sobre-2,.sobre-3{
     display: grid;
-    margin: 20px 0;
+    margin: 10px 0;
     font-size: 16px;
     place-items: center;
     max-width: 300px;
