@@ -102,7 +102,15 @@ z-index: 100;
   border: 2px solid #84e;
   padding: 10px 40px;
   border-radius: 25px;
+  font-weight: 700;
   text-transform: uppercase;
+}
+.introducao-conteudo a:hover{
+  background:rgba(13, 20, 41, 0.8);
+  transition: 0.5s ease;
+  color: rgba(202, 206, 221, 0.8);
+  border: none;
+  
 }
 /* Final introdução */
 /* Início main */
@@ -168,9 +176,9 @@ z-index: 100;
   
   } 
   .header-menu a:hover{
-
     border: 2px solid #84e;
     border-radius: 20px;
+    transition: 0.09s ease;
   }
   .header a:after{
     display: none;
