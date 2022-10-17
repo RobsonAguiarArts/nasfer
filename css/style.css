@@ -157,27 +157,20 @@ z-index: 100;
   line-height: 21px;
   margin: 0 0 20px;
 }
-
-
-
-
 /* Final main */
-
-
-
 /* Início media */
 @media (max-width: 800px){
   .header-menu{
     gap: 20px
   }
   .header-menu a {
-    
-    padding: 12px;
-    border-radius: 8px;
+    padding: 10px;
+  
   } 
   .header-menu a:hover{
 
-    background-color: #2e2e2e;
+    border: 2px solid #84e;
+    border-radius: 20px;
   }
   .header a:after{
     display: none;
