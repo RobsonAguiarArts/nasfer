@@ -23,7 +23,8 @@ a{
 }
 img{
   max-width: 100%;
-  display: block;
+  box-sizing: border-box;
+  max-width: 100%;
   
 }
 .header-bg{
@@ -67,19 +68,28 @@ img{
 }
 /* Final header */
 /* Início introducao */
-.introducao-bg {
- background: #000;
- color: #fff;
+
+.introducao-bg{
+  display: grid;
+  background: url(../img/cat.jpg) no-repeat center;
+  position: relative;
+  height: 100vh;
+  color: #fff;
+ }
+ .introducao-bg::before{
+  content:"";
+  background: rgba(6, 12, 34, 0.5);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  
 }
 .introducao{
   display:grid;
 }
-.introducao img{
-grid-area: 1/1;
-max-height: 100vh;
-opacity: 0.5;
-z-index: 100;
-}
+
 .introducao .introducao-conteudo{
   display: grid;
   grid-area: 1/1;
@@ -88,18 +98,34 @@ z-index: 100;
   margin-top: 40px;
   margin-bottom:20px;
   place-items: center;
+  position: relative;
 }
 .introducao-conteudo h1{
   text-transform: uppercase;
+  font-size: 38px;
+  line-height: 44px;
+  
 }
+.introducao-conteudo h1:after{
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: #84e;
+  margin-top: 8px;
+}
+
 .introducao-conteudo p{
   margin-top:20px;
-  max-width: 500px;
+  font-size: 22px;
+  line-height: 26px;
+  max-width: 600px;
+  text-align: center;
 }
 .introducao-conteudo a{
   display: grid;
   margin-top: 50px;
-  border: 2px solid #84e;
+  background: #84e;
   padding: 10px 40px;
   border-radius: 25px;
   font-weight: 700;
@@ -117,8 +143,6 @@ z-index: 100;
 .sobre-bg{
  background: url(../img/about-bg.jpg) no-repeat center;
  position: relative;
-
- 
 }
 .sobre-bg::before{
   content:"";
@@ -151,6 +175,7 @@ z-index: 100;
   font-weight: 700;
   text-transform: uppercase;
 }
+
 .sobre-1 h2{
   font-size: 36px;
   line-height: 43px;
@@ -169,11 +194,13 @@ z-index: 100;
 /* Início media */
 @media (max-width: 800px){
   .header-menu{
-    gap: 20px
+    gap: 20px;
+    justify-content: center;
+
   }
   .header-menu a {
-    padding: 10px;
-  
+   padding: 10px;
+
   } 
   .header-menu a:hover{
     border: 2px solid #84e;
@@ -182,6 +209,22 @@ z-index: 100;
   }
   .header a:after{
     display: none;
+  }
+  .introducao-bg{
+    background: url(../img/cat_800.jpg) no-repeat center;
+    max-height: 50vh;
+   }
+   .introducao-conteudo p,.introducao-conteudo h1{
+    max-width: 380px;
+    font-size: 14px;
+   }
+   .introducao-conteudo h1{
+    font-size: 18px;
+    line-height: 21px;
+   }
+   .introducao-conteudo h1:after{   
+    height: 2px;
+    margin-top: 8px;
   }
   .sobre-info{
     display: grid;
