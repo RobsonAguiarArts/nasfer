@@ -27,7 +27,7 @@ img{
   
 }
 .header-bg{
-   background: rgba(6, 12, 34, 0.9);  
+  background:rgba(13, 20, 41, 0.8);
   height: 130px;
 }
 .header{
@@ -79,6 +79,7 @@ img{
   position: relative;
   height: 100vh;
   color: #fff;
+  
  }
  .introducao-bg::before{
   content:"";
@@ -107,7 +108,7 @@ img{
   font-size: 38px;
   line-height: 44px;
   padding-bottom: 20px;
-  border-bottom: 4px solid #ae81ff;
+  border-bottom: 4px solid    #fff;
 }
 .introducao-conteudo p{
   margin-top:20px;
@@ -119,16 +120,16 @@ img{
 .introducao-conteudo a{
   display: grid;
   margin-top: 50px;
-  background: #ae81ff;
+  background:rgba(13, 20, 41, 0.8);
   padding: 10px 40px;
   border-radius: 25px;
   font-weight: 700;
   text-transform: uppercase;
 }
 .introducao-conteudo a:hover{
-  background:rgba(13, 20, 41, 0.8);
+  background:#84e;
   transition: 0.5s ease;
-  color: rgba(202, 206, 221, 0.8);
+  color:rgba(13, 20, 41, 8); 
   border: none;
 }
 /* Final introdução */
@@ -218,14 +219,17 @@ margin: 20px 10px;
   height: 30px;
   margin-right: 10px;
 }
-.servico-item:nth-of-type(3n+1) h2::before{
+.servico-item:nth-of-type(4n+1) h2::before{
   background: #ae81ff;
 }
-.servico-item:nth-of-type(3n+2) h2::before{
+.servico-item:nth-of-type(4n+2) h2::before{
   background: #f9265e;
 }
-.servico-item:nth-of-type(3n+3) h2::before{
+.servico-item:nth-of-type(4n+3) h2::before{
   background: #66d9eb;
+}
+.servico-item:nth-of-type(4n+4) h2::before{
+  background: #33F02F;
 }
 .servico-item p{
   font-size: 20px;
